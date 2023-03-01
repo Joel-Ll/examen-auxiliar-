@@ -1,0 +1,165 @@
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+*,*::before,*::after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+@media (min-width: 768px) { 
+	body {
+		height: 100vh;
+	}
+}
+
+.contenedor {
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media (min-width: 760px) { 
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+
+.your-name {
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+.your-name span {
+	font-weight: bold;
+}
+
+.navegacion {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media (min-width: 760px) { 
+	.navegacion {
+		flex-direction: row;
+		gap: 20px;
+	}
+}
+
+.navegacion a {
+	margin-bottom: 7px;
+	color: #2b2929;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.navegacion a:last-of-type {
+	margin-bottom: 0;
+}
+
+@media (min-width: 760px) { 
+	.navegacion a {
+		margin-bottom: 0;
+	}
+}
+
+.navegacion .navegacion-enlace {
+	color: white;
+	display: block;
+	background-color: rgb(35, 35, 213);
+	padding: 10px 30px;
+	border-radius: 20px;
+	font-weight: bold;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media (min-width: 760px) { 
+	main {
+		flex-direction: row;
+		column-gap: 20px;
+	}
+}
+
+.contenido-main h1 {
+	text-align: center;
+	font-size: 40px;
+}
+
+@media (min-width: 760px) { 
+	.contenido-main h1 {
+		text-align: left;
+		font-size: 70px;
+		margin-top: 0px;
+	}
+
+	.contenido-main h1 span {
+		display: block;
+	}
+}
+
+@media (min-width: 760px) { 
+	.contenido-main {
+		margin-right: 50px;
+	}
+}
+
+.contenido-main p {
+	font-size: 16px;
+	font-size: 17px;
+	line-height: 1.5;
+}
+
+.enlace-main {
+	display: block;
+	text-decoration: none;
+	background-color: rgb(35, 35, 213);
+	color: white;
+	text-align: center;
+	margin-top: 20px;
+	padding: 10px 30px;
+	border-radius: 20px;
+	font-weight: bold;
+}
+
+@media (min-width: 760px) { 
+	.enlace-main {
+		max-width: 200px;
+		
+	}
+}
+
+.imagen-main img {
+	margin-top: 20px;
+}
+
+@media (min-width: 760px) { 
+	.imagen-main  img{
+		margin-top: 0;
+		width: 1500px;
+		height: 500px;
+	}
+}
